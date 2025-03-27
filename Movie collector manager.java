@@ -94,7 +94,7 @@ public class MovieCollectorManager {
 
         searchButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String name = searchField.getText().trim();
+                String name = searchField.getText();
                 boolean found = false;
                 for (int i = 0; i < tableModel.getRowCount(); i++) {
                     if (tableModel.getValueAt(i, 0).toString().equalsIgnoreCase(name)) {
